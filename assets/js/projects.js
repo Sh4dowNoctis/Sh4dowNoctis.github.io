@@ -11,18 +11,25 @@ window.projects = [
     title: "SKYBOUND",
     year: "2024",
     role: "Gameplay Programmer",
-    summary: "2D platformer prototype focused on building mechanics and fast movement.",
+    summary: "School group project focused on building mechanics and fast movement.",
     featured: true,
     image: "assets/img/sc1.png",
     tags: ["Unity", "C#", "Game Feel", "Prototype"],
+    groupNote: "Group project (3 contributors)",
     highlights: [
       "Fast movement controller tuned for responsive feel.",
       "Building mechanics prototype for quick iteration.",
       "Prototype structure ready for expansion."
     ],
+    contribution: [
+      "Gameplay systems and core mechanics implementation.",
+      "Player movement, physics, and gameplay feel tuning.",
+      "Integration of animations and visual assets into Unity.",
+      "Iteration support, playtesting, and gameplay balance adjustments."
+    ],
     caseStudy: {
       overview:
-        "Prototype exploring fast movement and building mechanics. Focused on feel, clarity, and iteration loops.",
+        "School group project exploring fast movement and building mechanics. Focused on feel, clarity, and iteration loops.",
       built: [
         "Movement controller with tuning hooks for designer iteration.",
         "Building mechanic prototype with quick placement tests.",
@@ -39,170 +46,110 @@ window.projects = [
       gallery: [
         {
           src: "assets/img/sc1.png",
-          caption: "Movement prototype snapshot (add caption)."
+          caption: "Movement prototype snapshot (placeholder)."
         },
         {
           src: "assets/img/sc3.png",
-          caption: "Building mechanic test (add caption)."
+          caption: "Building mechanic test (placeholder)."
         }
       ]
     },
-    videoUrl: "",
-    videoLabel: "Video (add link)",
-    videoPlaceholder: true,
-    repoUrl: "",
-    repoLabel: "Repo (add link)",
-    repoPlaceholder: true,
-    buildUrl: "",
-    buildLabel: "Build (add link)",
-    buildPlaceholder: true
+    buildUrl: "https://sh4downoctis.itch.io/skybound",
+    buildLabel: "Play Demo",
+    buildPlaceholder: false,
+    showActions: "build-only"
   },
   {
-    id: "internship",
-    title: "Unity Internship Features",
+    id: "happlyz-medical",
+    title: "Happlyz Medical - Multiplayer & Gameplay Systems",
     year: "2023",
-    role: "Gameplay Programmer",
-    summary: "Shop refactor, multiplayer modes, UX improvements, and performance fixes for a Unity game.",
+    role: "Gameplay Programmer Intern",
+    summary:
+      "Worked as a Unity Gameplay Programmer on LORIO, a medical game-based application connected to a Bluetooth respiratory device.",
     featured: true,
-    image: "assets/img/sc2.png",
-    tags: ["Unity", "C#", "UX", "Systems"],
+    image: "assets/img/lorio.png",
+    tags: ["Unity", "C#", "Multiplayer", "UX", "Production"],
+    note: "Work completed during a professional internship.",
+    showActions: "case-study",
     highlights: [
-      "Refactored shop into inventory-style system.",
-      "Multiplayer functionality added for select modes.",
-      "Performance fixes and UX responsiveness improvements."
+      "Designed and implemented multiplayer logic for mini-games (Multi Melo Memo).",
+      "Optimized gameplay systems and performance for Pulmi's Race.",
+      "Reworked the in-game cosmetic shop into a modular, scalable system.",
+      "Implemented localization and player progression data visualization.",
+      "Delivered production-ready features used in a real medical context."
     ],
     caseStudy: {
       overview:
-        "Production gameplay features delivered during internship at Happlyz Medical with a focus on stability and polish.",
+        "Worked on LORIO, a medical game-based application tied to a Bluetooth respiratory device, delivering gameplay systems used in production.",
       built: [
-        "Shop system refactor into a structured inventory flow.",
-        "Multiplayer features for specific gameplay modes.",
-        "UX responsiveness improvements for smoother interactions."
+        "Multiplayer logic for mini-games, with sync and interaction handling.",
+        "Gameplay and performance improvements for Pulmi's Race.",
+        "Cosmetic shop refactor into a modular, scalable system.",
+        "Localization support and player progression data visualization."
       ],
       challenges: [
-        "Working within a legacy codebase (add detail).",
-        "Shipping updates without regressions (add detail)."
+        "Balancing production constraints with new gameplay feature work (add detail).",
+        "Maintaining UX consistency while refactoring legacy systems."
       ],
       improvements: [
-        "Expand automated test coverage (add detail).",
-        "Document system architecture for onboarding."
+        "Expand automated regression coverage for key gameplay flows (add detail).",
+        "Add deeper network diagnostics for edge cases (add detail)."
       ],
       gallery: [
         {
-          src: "assets/img/sc2.png",
-          caption: "Systems work snapshot (add caption)."
+          src: "assets/img/happlyz-lorio-progress.png",
+          caption: "LORIO professional dashboard with patient progress overview."
         },
         {
-          src: "assets/img/sc1.png",
-          caption: "UI/UX improvements example (add caption)."
+          src: "assets/img/happlyz-customization.png",
+          caption: "Cosmetic customization UI for player personalization."
+        },
+        {
+          src: "assets/img/happlyz-melo-memo.png",
+          caption: "Multi Melo Memo mini-game with musical interaction."
+        },
+        {
+          src: "assets/img/happlyz-pulmis-race.png",
+          caption: "Pulmi's Race gameplay with performance-focused tuning."
         }
       ]
-    },
-    videoUrl: "",
-    videoLabel: "Video (add link)",
-    videoPlaceholder: true,
-    repoUrl: "",
-    repoLabel: "Repo (add link)",
-    repoPlaceholder: true,
-    buildUrl: "",
-    buildLabel: "Build (add link)",
-    buildPlaceholder: true
+    }
   },
   {
-    id: "prototype-lab",
-    title: "Gameplay Prototype Lab",
-    year: "2024",
-    role: "Gameplay Programmer",
-    summary: "Small prototypes for testing mechanics, input tuning, and game feel.",
+    id: "potech-obsoft",
+    title: "AI-Powered Automated Test Generation",
+    year: "2025",
+    role: "AI Engineer Intern",
+    summary:
+      "Designed and implemented an AI-driven system to automatically generate unit tests from source code and user stories.",
     featured: true,
-    image: "assets/img/sc3.png",
-    tags: ["Unity", "C#", "Prototyping", "Input"],
+    image: "",
+    tags: ["Python", "PHP", "Symfony", "RAG", "ChromaDB", "LLM"],
+    note: "Work completed during a professional internship.",
+    showActions: "case-study",
     highlights: [
-      "Rapid prototypes to validate mechanics and feedback.",
-      "Input tuning and game feel experiments.",
-      "Lightweight systems built for iteration speed."
+      "Built an AI pipeline using embeddings and retrieval-augmented generation.",
+      "Automated test generation integrated into CLI and Git workflows.",
+      "Focused on clean architecture, validation, and maintainability.",
+      "Improved developer productivity through fast iteration and feedback."
     ],
     caseStudy: {
       overview:
-        "Collection of quick gameplay experiments to test core loops and control feel.",
+        "Designed an AI-driven system to generate unit tests from code and user stories with fast developer feedback loops.",
       built: [
-        "Multiple mechanic prototypes for fast playtesting.",
-        "Input curves and feel adjustments.",
-        "Reusable prototype scaffolding."
+        "AI pipeline using embeddings and retrieval-augmented generation to ground prompts.",
+        "CLI tooling and Git workflow integration for automated test generation.",
+        "Validation loop to improve output reliability and maintainability."
       ],
       challenges: [
-        "Timeboxing ideas for rapid learning (add detail).",
-        "Keeping scope tight across experiments."
+        "Maintaining reliability across varied code structures (add detail).",
+        "Balancing generation speed with validation accuracy."
       ],
       improvements: [
-        "Curate a highlight reel (add link).",
-        "Expand prototypes into case studies."
+        "Integrate CI checks for generated tests (add detail).",
+        "Broaden coverage and dataset tuning (add detail)."
       ],
-      gallery: [
-        {
-          src: "assets/img/sc3.png",
-          caption: "Prototype test capture (add caption)."
-        },
-        {
-          src: "assets/img/sc1.png",
-          caption: "Input tuning test (add caption)."
-        }
-      ]
-    },
-    videoUrl: "",
-    videoLabel: "Video (add link)",
-    videoPlaceholder: true,
-    repoUrl: "",
-    repoLabel: "Repo (add link)",
-    repoPlaceholder: true,
-    buildUrl: "",
-    buildLabel: "Build (add link)",
-    buildPlaceholder: true
-  },
-  {
-    id: "gotta-go-fast",
-    title: "Gotta Go Fast",
-    year: "2021",
-    role: "Solo Project",
-    summary: "Solo mobile project recreating ZigZag-style movement with Unity and C#.",
-    featured: false,
-    image: "assets/img/sc1.png",
-    tags: ["Unity", "C#", "Mobile"],
-    highlights: [],
-    caseStudy: {
-      overview:
-        "Mobile prototype inspired by ZigZag-style gameplay with a focus on input timing.",
-      built: [
-        "Touch input timing loop with score tracking.",
-        "Level speed escalation system.",
-        "Simple UI for quick feedback."
-      ],
-      challenges: [
-        "Balancing difficulty and speed (add numbers).",
-        "Keeping input forgiving without losing challenge."
-      ],
-      improvements: [
-        "Add polish pass on visuals (add detail)."
-      ],
-      gallery: [
-        {
-          src: "assets/img/sc1.png",
-          caption: "Prototype capture (add caption)."
-        },
-        {
-          src: "assets/img/sc2.png",
-          caption: "UI iteration (add caption)."
-        }
-      ]
-    },
-    videoUrl: "",
-    videoLabel: "Video (add link)",
-    videoPlaceholder: true,
-    repoUrl: "",
-    repoLabel: "Repo (add link)",
-    repoPlaceholder: true,
-    buildUrl: "",
-    buildLabel: "Build (add link)",
-    buildPlaceholder: true
+      gallery: []
+    }
   }
 ];

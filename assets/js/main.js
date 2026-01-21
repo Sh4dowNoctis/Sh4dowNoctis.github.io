@@ -168,9 +168,6 @@ copyButtons.forEach(button => {
 });
 
 const featuredGrid = document.getElementById('featured-grid');
-const projectGrid = document.getElementById('project-grid');
-const featuredEmpty = document.getElementById('featured-empty');
-const projectsEmpty = document.getElementById('projects-empty');
 
 const buildLinkButton = (link, variant) => {
   if (!link) return '';
@@ -211,15 +208,16 @@ const getProjectLinks = project => {
   return links;
 };
 
+const buildCaseStudyButton = project =>
+  `<button class="btn ghost js-case-study" type="button" data-project-id="${project.id}">Case study</button>`;
+
 const buildProjectActions = project => {
   const links = getProjectLinks(project);
   const buttons = [];
   if (links[0]) buttons.push(buildLinkButton(links[0], 'primary'));
   if (links[1]) buttons.push(buildLinkButton(links[1], 'ghost'));
   if (links[2]) buttons.push(buildLinkButton(links[2], 'ghost'));
-  buttons.push(
-    `<button class="btn ghost js-case-study" type="button" data-project-id="${project.id}">Case study</button>`
-  );
+  buttons.push(buildCaseStudyButton(project));
   return buttons.join('');
 };
 
@@ -227,10 +225,37 @@ const buildFeaturedCard = project => {
   const highlights = (project.highlights || []).map(item => `<li>${item}</li>`).join('');
   const tags = (project.tags || []).map(tag => `<span class="chip">${tag}</span>`).join('');
   const metaTags = (project.tags || []).slice(0, 3).map(tag => `<span class="meta-pill">${tag}</span>`).join('');
+  const media = project.image
+    ? `<img src="${project.image}" alt="${project.title} gameplay screenshot" loading="lazy" decoding="async">`
+    : `<div class="media-placeholder">Media coming soon</div>`;
+  const note = project.note ? `<p class="project-note">${project.note}</p>` : '';
+  const groupNote = project.groupNote ? `<p class="project-subnote">${project.groupNote}</p>` : '';
+  const contributionItems = (project.contribution || []).map(item => `<li>${item}</li>`).join('');
+  const contribution = contributionItems
+    ? `
+      <div class="project-contribution">
+        <h4>My contribution</h4>
+        <ul>${contributionItems}</ul>
+      </div>
+    `
+    : '';
+  let actions = '';
+  if (project.showActions === 'case-study') {
+    actions = `<div class="project-actions">${buildCaseStudyButton(project)}</div>`;
+  } else if (project.showActions === 'build-only') {
+    if (project.buildUrl) {
+      actions = `<div class="project-actions">${buildLinkButton({
+        url: project.buildUrl,
+        label: project.buildLabel || 'Play Demo'
+      }, 'primary')}</div>`;
+    }
+  } else if (project.showActions !== false) {
+    actions = `<div class="project-actions">${buildProjectActions(project)}</div>`;
+  }
   return `
     <article class="project-card featured-card reveal" data-project-id="${project.id}">
       <div class="project-media">
-        <img src="${project.image}" alt="${project.title} gameplay screenshot" loading="lazy" decoding="async">
+        ${media}
         <div class="project-meta">
           ${metaTags}
         </div>
@@ -241,48 +266,32 @@ const buildFeaturedCard = project => {
           <span>${project.role}</span>
         </div>
         <h3 class="project-title">${project.title}</h3>
+        ${groupNote}
+        <p class="project-summary">${project.summary}</p>
         <ul class="project-highlights">${highlights}</ul>
+        ${contribution}
         <div class="tag-row">${tags}</div>
-        <div class="project-actions">${buildProjectActions(project)}</div>
+        ${note}
+        ${actions}
       </div>
     </article>
   `;
 };
 
-const buildProjectCard = project => {
-  const tags = (project.tags || []).map(tag => `<span class="meta-pill">${tag}</span>`).join('');
-  return `
-    <article class="project-card reveal" data-project-id="${project.id}">
-      <div class="project-media">
-        <img src="${project.image}" alt="${project.title} gameplay screenshot" loading="lazy" decoding="async">
-        <div class="project-meta">${tags}</div>
-      </div>
-      <div class="project-body">
-        <div class="project-top">
-          <span>${project.year}</span>
-          <span>${project.role}</span>
-        </div>
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-role">${project.summary}</p>
-        <div class="project-actions">${buildProjectActions(project)}</div>
-      </div>
-    </article>
-  `;
-};
-
-const renderProjects = () => {
-  if (!featuredGrid || !projectGrid || !window.projects) return;
-  const featuredProjects = window.projects.filter(project => project.featured);
-  const moreProjects = window.projects.filter(project => !project.featured);
-
-  featuredGrid.innerHTML = featuredProjects.map(buildFeaturedCard).join('');
-  projectGrid.innerHTML = moreProjects.map(buildProjectCard).join('');
-
-  if (featuredEmpty) {
-    featuredEmpty.hidden = featuredProjects.length > 0;
+const getProjectData = () => {
+  if (!Array.isArray(window.projects) || window.projects.length === 0) {
+    console.error('Project data missing: assets/js/projects.js');
+    return null;
   }
-  if (projectsEmpty) {
-    projectsEmpty.hidden = moreProjects.length > 0;
+  return window.projects;
+};
+
+const renderProjects = data => {
+  if (!featuredGrid || !data) return;
+  const featuredProjects = data.filter(project => project.featured);
+
+  if (featuredProjects.length > 0) {
+    featuredGrid.innerHTML = featuredProjects.map(buildFeaturedCard).join('');
   }
 
   observeReveal(document.querySelectorAll('.reveal:not(.in-view)'));
@@ -301,8 +310,9 @@ const bindCaseStudyButtons = () => {
   });
 };
 
-if (window.projects) {
-  renderProjects();
+const projectData = getProjectData();
+if (projectData) {
+  renderProjects(projectData);
 }
 
 const createModalController = (modalId, onClose) => {
@@ -409,12 +419,24 @@ const openCaseStudyModal = (projectId, trigger) => {
   improvementsEl.innerHTML = (caseStudy.improvements || []).map(item => `<li>${item}</li>`).join('');
 
   if (galleryEl) {
-    galleryEl.innerHTML = (caseStudy.gallery || []).map(item => `
+    const galleryItems = caseStudy.gallery || [];
+    const gallerySection = galleryEl.closest('.modal-section');
+    if (galleryItems.length === 0) {
+      galleryEl.innerHTML = '';
+      if (gallerySection) {
+        gallerySection.style.display = 'none';
+      }
+    } else {
+      if (gallerySection) {
+        gallerySection.style.display = '';
+      }
+      galleryEl.innerHTML = galleryItems.map(item => `
       <figure>
         <img src="${item.src}" alt="${project.title} gallery image" loading="lazy" decoding="async">
         <figcaption>${item.caption}</figcaption>
       </figure>
-    `).join('');
+      `).join('');
+    }
   }
 
   if (techEl) {
