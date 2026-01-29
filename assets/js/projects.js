@@ -61,11 +61,11 @@ window.projects = [
   },
   {
     id: "happlyz-medical",
-    title: "Happlyz Medical - Multiplayer & Gameplay Systems",
+    title: "Happlyz Medical - Unity Gameplay Internship (Paris, France)",
     year: "2023",
     role: "Gameplay Programmer Intern",
     summary:
-      "Worked as a Unity Gameplay Programmer on LORIO, a medical game-based application connected to a Bluetooth respiratory device.",
+      "Professional internship as a Unity Gameplay Programmer on LORIO, a medical game-based application connected to a Bluetooth respiratory device.",
     featured: true,
     image: "assets/img/lorio.png",
     tags: ["Unity", "C#", "Multiplayer", "UX", "Production"],
@@ -117,11 +117,11 @@ window.projects = [
   },
   {
     id: "potech-obsoft",
-    title: "AI-Powered Automated Test Generation",
+    title: "PoTech / OBSoft - AI Test Generation Internship (Lebanon)",
     year: "2025",
     role: "AI Engineer Intern",
     summary:
-      "Designed and implemented an AI-driven system to automatically generate unit tests from source code and user stories.",
+      "Professional internship with OBSoft, the engineering and R&D branch of PoTech, designing an AI system to generate unit tests from source code and user stories.",
     featured: true,
     image: "",
     tags: ["Python", "PHP", "Symfony", "RAG", "ChromaDB", "LLM"],

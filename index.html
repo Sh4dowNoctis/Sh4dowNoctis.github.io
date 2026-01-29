@@ -26,16 +26,20 @@
       <div class="header-inner">
         <div class="brand">
           <div class="name">Carl Van Hoorebeke</div>
-          <div class="role">Software Developer</div>
+          <div class="role" data-i18n="header.role">Software Developer</div>
         </div>
         <nav class="site-nav" aria-label="Section navigation">
-          <a class="nav-link" href="#home">Home</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#skills">Skills</a>
-          <a class="nav-link" href="#resume">Resume</a>
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#home" data-i18n="nav.home">Home</a>
+          <a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a>
+          <a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a>
+          <a class="nav-link" href="#resume" data-i18n="nav.resume">Resume</a>
+          <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="header-actions">
+          <div class="lang-toggle" role="group" aria-label="Language toggle">
+            <button class="btn tiny" type="button" data-lang="en">EN</button>
+            <button class="btn tiny" type="button" data-lang="fr">FR</button>
+          </div>
           <a
             class="icon-btn"
             href="https://www.linkedin.com/in/carl-vano/"
@@ -44,6 +48,7 @@
             aria-label="LinkedIn"
             title="LinkedIn"
             data-tooltip="LinkedIn"
+            data-i18n="nav.linkedin"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -61,6 +66,7 @@
             aria-label="GitHub"
             title="GitHub"
             data-tooltip="GitHub"
+            data-i18n="nav.github"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M9 19c-5 1.5-5-2.5-7-3"></path>
@@ -75,6 +81,7 @@
             aria-label="Email"
             title="Email"
             data-tooltip="Email"
+            data-i18n="nav.email"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -88,6 +95,7 @@
             href="assets/docs/resume.pdf"
             download
             aria-label="Download resume"
+            data-i18n="nav.downloadResume"
             >Download Resume</a
           >
         </div>
@@ -101,25 +109,38 @@
             <img src="assets/img/avatar.jpg" alt="Carl Van Hoorebeke" />
           </div>
           <div class="hero-content">
-            <p class="hero-title">Software Developer</p>
-            <p class="hero-lede">
+            <p class="hero-title" data-i18n="hero.title">Software Developer</p>
+            <p class="hero-lede" data-i18n="hero.subtitle">
               Gameplay systems, AI tooling, and production-ready software.
             </p>
             <ul class="hero-proof">
-              <li>Unity gameplay systems delivered in production internship</li>
-              <li>Rapid prototypes focused on responsiveness and game feel</li>
-              <li>Performance-minded debugging and iteration workflows</li>
+              <li data-i18n="hero.proof1">
+                Unity gameplay systems delivered in production internship
+              </li>
+              <li data-i18n="hero.proof2">
+                Rapid prototypes focused on responsiveness and game feel
+              </li>
+              <li data-i18n="hero.proof3">
+                Performance-minded debugging and iteration workflows
+              </li>
             </ul>
             <div class="hero-actions">
-              <button class="btn primary" type="button" id="demo-reel-trigger">
-                Watch Demo Reel
+              <button
+                class="btn primary"
+                type="button"
+                id="demo-reel-trigger"
+                data-open-demo
+              >
+                <span data-i18n="hero.ctaDemo">Watch Demo Reel</span>
               </button>
             </div>
           </div>
         </div>
         <aside class="hero-preview reveal">
           <div class="preview-card">
-            <span class="preview-label">Featured Project</span>
+            <span class="preview-label" data-i18n="hero.previewLabel"
+              >Featured Project</span
+            >
             <img
               src="assets/img/sc1.png"
               alt="Skybound preview screenshot"
@@ -127,12 +148,12 @@
               decoding="async"
             />
             <div class="preview-body">
-              <h3>SKYBOUND</h3>
-              <p>
+              <h3 data-i18n="projects.skybound.title">SKYBOUND</h3>
+              <p data-i18n="hero.previewSummary">
                 2D platformer prototype focused on building mechanics and fast
                 movement.
               </p>
-              <a class="btn small ghost" href="#featured-projects">
+              <a class="btn small ghost" href="#featured-projects" data-i18n="hero.previewCta">
                 View featured work
               </a>
             </div>
@@ -142,8 +163,8 @@
 
       <section id="projects" class="section projects">
         <div class="section-title reveal">
-          <h2>My Projects</h2>
-          <p class="section-lede">
+          <h2 data-i18n="projects.title">My Projects</h2>
+          <p class="section-lede" data-i18n="projects.lede">
             My personal project and production-focused internships.
           </p>
         </div>
@@ -159,43 +180,59 @@
                   decoding="async"
                 />
                 <div class="project-meta">
-                  <span class="meta-pill">Unity</span>
-                  <span class="meta-pill">Prototype</span>
-                  <span class="meta-pill">Gameplay</span>
+                  <span class="meta-pill" data-i18n="tags.unity">Unity</span>
+                  <span class="meta-pill" data-i18n="tags.prototype">Prototype</span>
+                  <span class="meta-pill" data-i18n="tags.gameplay">Gameplay</span>
                 </div>
               </div>
               <div class="project-body">
                 <div class="project-top">
                   <span>2024</span>
-                  <span>Gameplay Programmer</span>
+                  <span data-i18n="projects.skybound.role">Gameplay Programmer</span>
                 </div>
-                <h3 class="project-title">SKYBOUND</h3>
-                <p class="project-subnote">Group project (3 contributors)</p>
-                <p class="project-summary">
+                <h3 class="project-title" data-i18n="projects.skybound.title">SKYBOUND</h3>
+                <p class="project-subnote" data-i18n="projects.skybound.groupNote">
+                  Group project (3 contributors)
+                </p>
+                <p class="project-summary" data-i18n="projects.skybound.summary">
                   School group project focused on building mechanics and fast
                   movement.
                 </p>
                 <ul class="project-highlights">
-                  <li>Fast movement controller tuned for responsive feel.</li>
-                  <li>Building mechanics prototype for quick iteration.</li>
-                  <li>Prototype structure ready for expansion.</li>
+                  <li data-i18n="projects.skybound.highlights.0">
+                    Fast movement controller tuned for responsive feel.
+                  </li>
+                  <li data-i18n="projects.skybound.highlights.1">
+                    Building mechanics prototype for quick iteration.
+                  </li>
+                  <li data-i18n="projects.skybound.highlights.2">
+                    Prototype structure ready for expansion.
+                  </li>
                 </ul>
                 <div class="project-contribution">
-                  <h4>My contribution</h4>
+                  <h4 data-i18n="projects.contributionTitle">My contribution</h4>
                   <ul>
-                    <li>Gameplay systems and core mechanics implementation.</li>
-                    <li>Player movement, physics, and gameplay feel tuning.</li>
-                    <li>Integration of animations and visual assets into Unity.</li>
+                    <li data-i18n="projects.skybound.contribution.0">
+                      Gameplay systems and core mechanics implementation.
+                    </li>
+                    <li data-i18n="projects.skybound.contribution.1">
+                      Player movement, physics, and gameplay feel tuning.
+                    </li>
+                    <li data-i18n="projects.skybound.contribution.2">
+                      Integration of animations and visual assets into Unity.
+                    </li>
                     <li>
-                      Iteration support, playtesting, and gameplay balance
-                      adjustments.
+                      <span data-i18n="projects.skybound.contribution.3">
+                        Iteration support, playtesting, and gameplay balance
+                        adjustments.
+                      </span>
                     </li>
                   </ul>
                 </div>
                 <div class="tag-row">
-                  <span class="chip">Unity</span>
-                  <span class="chip">C#</span>
-                  <span class="chip">Game Feel</span>
+                  <span class="chip" data-i18n="tags.unity">Unity</span>
+                  <span class="chip" data-i18n="tags.csharp">C#</span>
+                  <span class="chip" data-i18n="tags.gameFeel">Game Feel</span>
                 </div>
                 <div class="project-actions">
                   <a
@@ -203,6 +240,7 @@
                     href="https://sh4downoctis.itch.io/skybound"
                     target="_blank"
                     rel="noreferrer"
+                    data-i18n="projects.skybound.playDemo"
                   >
                     Play Demo
                   </a>
@@ -218,53 +256,53 @@
                   decoding="async"
                 />
                 <div class="project-meta">
-                  <span class="meta-pill">Unity</span>
-                  <span class="meta-pill">C#</span>
-                  <span class="meta-pill">Production</span>
+                  <span class="meta-pill" data-i18n="tags.unity">Unity</span>
+                  <span class="meta-pill" data-i18n="tags.csharp">C#</span>
+                  <span class="meta-pill" data-i18n="tags.production">Production</span>
                 </div>
               </div>
               <div class="project-body">
                 <div class="project-top">
                   <span>2023</span>
-                  <span>Gameplay Programmer Intern</span>
+                  <span data-i18n="projects.happlyz.role">Gameplay Programmer Intern</span>
                 </div>
-                <h3 class="project-title">
-                  Happlyz Medical - Multiplayer &amp; Gameplay Systems
+                <h3 class="project-title" data-i18n="projects.happlyz.title">
+                  Happlyz Medical - Unity Gameplay Internship (Paris, France)
                 </h3>
-                <p class="project-summary">
-                  Worked as a Unity Gameplay Programmer on LORIO, a medical
-                  game-based application connected to a Bluetooth respiratory
-                  device.
+                <p class="project-summary" data-i18n="projects.happlyz.summary">
+                  Professional internship as a Unity Gameplay Programmer on
+                  LORIO, a medical game-based application connected to a
+                  Bluetooth respiratory device.
                 </p>
                 <ul class="project-highlights">
-                  <li>
+                  <li data-i18n="projects.happlyz.highlights.0">
                     Designed and implemented multiplayer logic for mini-games
                     (Multi Melo Memo).
                   </li>
-                  <li>
+                  <li data-i18n="projects.happlyz.highlights.1">
                     Optimized gameplay systems and performance for Pulmi's Race.
                   </li>
-                  <li>
+                  <li data-i18n="projects.happlyz.highlights.2">
                     Reworked the in-game cosmetic shop into a modular, scalable
                     system.
                   </li>
-                  <li>
+                  <li data-i18n="projects.happlyz.highlights.3">
                     Implemented localization and player progression data
                     visualization.
                   </li>
-                  <li>
+                  <li data-i18n="projects.happlyz.highlights.4">
                     Delivered production-ready features used in a real medical
                     context.
                   </li>
                 </ul>
                 <div class="tag-row">
-                  <span class="chip">Unity</span>
-                  <span class="chip">C#</span>
-                  <span class="chip">Multiplayer</span>
-                  <span class="chip">UX</span>
-                  <span class="chip">Production</span>
+                  <span class="chip" data-i18n="tags.unity">Unity</span>
+                  <span class="chip" data-i18n="tags.csharp">C#</span>
+                  <span class="chip" data-i18n="tags.multiplayer">Multiplayer</span>
+                  <span class="chip" data-i18n="tags.ux">UX</span>
+                  <span class="chip" data-i18n="tags.production">Production</span>
                 </div>
-                <p class="project-note">
+                <p class="project-note" data-i18n="projects.internNote">
                   Work completed during a professional internship.
                 </p>
                 <div class="project-actions">
@@ -272,6 +310,7 @@
                     class="btn ghost js-case-study"
                     type="button"
                     data-project-id="happlyz-medical"
+                    data-i18n="projects.caseStudyBtn"
                   >
                     Case study
                   </button>
@@ -280,51 +319,54 @@
             </article>
             <article class="project-card featured-card fallback-card">
               <div class="project-media">
-                <div class="media-placeholder">Media coming soon</div>
+                <div class="media-placeholder" data-i18n="projects.mediaPlaceholder">
+                  Media coming soon
+                </div>
                 <div class="project-meta">
-                  <span class="meta-pill">PHP</span>
-                  <span class="meta-pill">Python</span>
-                  <span class="meta-pill">RAG</span>
+                  <span class="meta-pill" data-i18n="tags.php">PHP</span>
+                  <span class="meta-pill" data-i18n="tags.python">Python</span>
+                  <span class="meta-pill" data-i18n="tags.rag">RAG</span>
                 </div>
               </div>
               <div class="project-body">
                 <div class="project-top">
                   <span>2025</span>
-                  <span>AI Engineer Intern</span>
+                  <span data-i18n="projects.potech.role">AI Engineer Intern</span>
                 </div>
-                <h3 class="project-title">
-                  AI-Powered Automated Test Generation
+                <h3 class="project-title" data-i18n="projects.potech.title">
+                  PoTech / OBSoft - AI Test Generation Internship (Lebanon)
                 </h3>
-                <p class="project-summary">
-                  Designed and implemented an AI-driven system to automatically
-                  generate unit tests from source code and user stories.
+                <p class="project-summary" data-i18n="projects.potech.summary">
+                  Professional internship with OBSoft, the engineering and
+                  R&amp;D branch of PoTech, designing an AI system to generate
+                  unit tests from source code and user stories.
                 </p>
                 <ul class="project-highlights">
-                  <li>
+                  <li data-i18n="projects.potech.highlights.0">
                     Built an AI pipeline using embeddings and
                     retrieval-augmented generation.
                   </li>
-                  <li>
+                  <li data-i18n="projects.potech.highlights.1">
                     Automated test generation integrated into CLI and Git
                     workflows.
                   </li>
-                  <li>
+                  <li data-i18n="projects.potech.highlights.2">
                     Focused on clean architecture, validation, and
                     maintainability.
                   </li>
-                  <li>
+                  <li data-i18n="projects.potech.highlights.3">
                     Improved developer productivity through fast iteration and
                     feedback.
                   </li>
                 </ul>
                 <div class="tag-row">
-                  <span class="chip">PHP</span>
-                  <span class="chip">Symfony</span>
-                  <span class="chip">RAG</span>
-                  <span class="chip">ChromaDB</span>
-                  <span class="chip">LLM</span>
+                  <span class="chip" data-i18n="tags.php">PHP</span>
+                  <span class="chip" data-i18n="tags.symfony">Symfony</span>
+                  <span class="chip" data-i18n="tags.rag">RAG</span>
+                  <span class="chip" data-i18n="tags.chromadb">ChromaDB</span>
+                  <span class="chip" data-i18n="tags.llm">LLM</span>
                 </div>
-                <p class="project-note">
+                <p class="project-note" data-i18n="projects.internNote">
                   Work completed during a professional internship.
                 </p>
                 <div class="project-actions">
@@ -332,6 +374,7 @@
                     class="btn ghost js-case-study"
                     type="button"
                     data-project-id="potech-obsoft"
+                    data-i18n="projects.caseStudyBtn"
                   >
                     Case study
                   </button>
@@ -344,40 +387,52 @@
 
       <section id="skills" class="section skills">
         <div class="section-title reveal">
-          <h2>Technical Experience</h2>
-          <p class="section-lede">Grouped by strength and focus areas.</p>
+          <h2 data-i18n="skills.title">Technical Experience</h2>
+          <p class="section-lede" data-i18n="skills.lede">
+            Grouped by strength and focus areas.
+          </p>
         </div>
         <div class="skills-groups">
           <div class="skills-group reveal">
             <div class="skills-header">
-              <h3>Core</h3>
+              <h3 data-i18n="skills.core">Core</h3>
             </div>
             <div class="skills-row">
-              <span class="chip">Unity</span>
-              <span class="chip">C#</span>
-              <span class="chip">Gameplay Programming</span>
-              <span class="chip">Input Tuning</span>
-              <span class="chip">Game Feel</span>
-              <span class="chip">Debugging</span>
-              <span class="chip">Optimization</span>
+              <span class="chip" data-i18n="skills.chips.unity">Unity</span>
+              <span class="chip" data-i18n="skills.chips.csharp">C#</span>
+              <span class="chip" data-i18n="skills.chips.gameplayProgramming"
+                >Gameplay Programming</span
+              >
+              <span class="chip" data-i18n="skills.chips.inputTuning"
+                >Input Tuning</span
+              >
+              <span class="chip" data-i18n="skills.chips.gameFeel">Game Feel</span>
+              <span class="chip" data-i18n="skills.chips.debugging">Debugging</span>
+              <span class="chip" data-i18n="skills.chips.optimization"
+                >Optimization</span
+              >
             </div>
           </div>
 
           <div class="skills-group reveal">
             <div class="skills-header">
-              <h3>Familiar</h3>
+              <h3 data-i18n="skills.familiar">Familiar</h3>
             </div>
             <div class="skills-row">
-              <span class="chip">UI</span>
-              <span class="chip">Prototyping</span>
-              <span class="chip">Multiplayer Basics</span>
-              <span class="chip">Python</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">PHP</span>
-              <span class="chip">MySQL</span>
-              <span class="chip">PostgreSQL</span>
-              <span class="chip">Git</span>
-              <span class="chip">CI Basics</span>
+              <span class="chip" data-i18n="skills.chips.ui">UI</span>
+              <span class="chip" data-i18n="skills.chips.prototyping"
+                >Prototyping</span
+              >
+              <span class="chip" data-i18n="skills.chips.multiplayerBasics"
+                >Multiplayer Basics</span
+              >
+              <span class="chip" data-i18n="skills.chips.python">Python</span>
+              <span class="chip" data-i18n="skills.chips.node">Node.js</span>
+              <span class="chip" data-i18n="skills.chips.php">PHP</span>
+              <span class="chip" data-i18n="skills.chips.mysql">MySQL</span>
+              <span class="chip" data-i18n="skills.chips.postgres">PostgreSQL</span>
+              <span class="chip" data-i18n="skills.chips.git">Git</span>
+              <span class="chip" data-i18n="skills.chips.ci">CI Basics</span>
             </div>
           </div>
         </div>
@@ -386,23 +441,37 @@
       <section id="about" class="section about">
         <div class="about-panel reveal">
           <div class="about-content">
-            <h2>About</h2>
-            <p>
+            <h2 data-i18n="about.title">About</h2>
+            <p data-i18n="about.summary">
               Software developer with a gameplay programming foundation in Unity
               and C#. I now build AI tooling and backend workflows while still
               shipping responsive gameplay systems and prototypes.
             </p>
             <ul class="about-list">
-              <li>Rebuilt a shop system into a modern inventory structure.</li>
-              <li>Improved game feel, UX, and performance in production.</li>
-              <li>Added multiplayer functionality for select modes.</li>
-              <li>Improved UX and overall responsiveness.</li>
+              <li data-i18n="about.bullets.0">
+                Rebuilt a shop system into a modern inventory structure.
+              </li>
+              <li data-i18n="about.bullets.1">
+                Improved game feel, UX, and performance in production.
+              </li>
+              <li data-i18n="about.bullets.2">
+                Added multiplayer functionality for select modes.
+              </li>
+              <li data-i18n="about.bullets.3">
+                Improved UX and overall responsiveness.
+              </li>
             </ul>
             <div class="about-chips">
-              <span class="chip">Game Feel</span>
-              <span class="chip">Systems Design</span>
-              <span class="chip">Iteration Speed</span>
-              <span class="chip">Team Collaboration</span>
+              <span class="chip" data-i18n="about.chips.gameFeel">Game Feel</span>
+              <span class="chip" data-i18n="about.chips.systemsDesign"
+                >Systems Design</span
+              >
+              <span class="chip" data-i18n="about.chips.iterationSpeed"
+                >Iteration Speed</span
+              >
+              <span class="chip" data-i18n="about.chips.teamCollaboration"
+                >Team Collaboration</span
+              >
             </div>
           </div>
         </div>
@@ -410,8 +479,10 @@
 
       <section id="resume" class="section resume">
         <div class="section-title reveal">
-          <h2>Resume</h2>
-          <p class="section-lede">Quick preview and a downloadable PDF.</p>
+          <h2 data-i18n="resume.title">Resume</h2>
+          <p class="section-lede" data-i18n="resume.lede">
+            Quick preview and a downloadable PDF.
+          </p>
         </div>
         <div class="resume-grid">
           <div class="resume-card reveal">
@@ -424,7 +495,7 @@
               />
             </div>
             <div class="resume-actions">
-              <a class="btn primary" href="assets/docs/resume.pdf" download>
+              <a class="btn primary" href="assets/docs/resume.pdf" download data-i18n="resume.download">
                 Download Resume
               </a>
               <button
@@ -432,6 +503,7 @@
                 type="button"
                 data-resume-toggle
                 aria-expanded="false"
+                data-i18n="resume.toggleOpen"
               >
                 Open inline preview
               </button>
@@ -444,32 +516,50 @@
             </div>
           </div>
           <div class="resume-summary reveal">
-            <h3>How I Work</h3>
+            <h3 data-i18n="resume.howTitle">How I Work</h3>
             <div class="summary-block">
-              <h4>Gameplay Focus</h4>
+              <h4 data-i18n="resume.focusTitle">Gameplay Focus</h4>
               <ul class="summary-list">
-                <li>Feel-first systems (movement, abilities, combat loops)</li>
-                <li>Fast iteration driven by playtesting</li>
-                <li>Responsive input and readable feedback</li>
+                <li data-i18n="resume.focus.0">
+                  Feel-first systems (movement, abilities, combat loops)
+                </li>
+                <li data-i18n="resume.focus.1">
+                  Fast iteration driven by playtesting
+                </li>
+                <li data-i18n="resume.focus.2">
+                  Responsive input and readable feedback
+                </li>
               </ul>
             </div>
             <div class="summary-block">
-              <h4>Technical Mindset</h4>
+              <h4 data-i18n="resume.techTitle">Technical Mindset</h4>
               <ul class="summary-list">
-                <li>Clean, maintainable C# architecture</li>
-                <li>Debugging and profiling as part of development</li>
-                <li>Performance-aware even during prototyping</li>
+                <li data-i18n="resume.tech.0">
+                  Clean, maintainable C# architecture
+                </li>
+                <li data-i18n="resume.tech.1">
+                  Debugging and profiling as part of development
+                </li>
+                <li data-i18n="resume.tech.2">
+                  Performance-aware even during prototyping
+                </li>
               </ul>
             </div>
             <div class="summary-block">
-              <h4>Team & Production</h4>
+              <h4 data-i18n="resume.teamTitle">Team & Production</h4>
               <ul class="summary-list">
-                <li>Comfortable working with designers and artists</li>
-                <li>Used to refactors and production constraints</li>
-                <li>Clear communication, no overengineering</li>
+                <li data-i18n="resume.team.0">
+                  Comfortable working with designers and artists
+                </li>
+                <li data-i18n="resume.team.1">
+                  Used to refactors and production constraints
+                </li>
+                <li data-i18n="resume.team.2">
+                  Clear communication, no overengineering
+                </li>
               </ul>
             </div>
-            <p class="resume-footnote">
+            <p class="resume-footnote" data-i18n="resume.footnote">
               Full experience and details available in the resume.
             </p>
           </div>
@@ -478,15 +568,15 @@
 
       <section id="contact" class="section contact">
         <div class="section-title reveal">
-          <h2>Contact</h2>
-          <p class="section-lede">
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p class="section-lede" data-i18n="contact.lede">
             Reach out for opportunities, collaboration, or questions.
           </p>
         </div>
         <div class="contact-panel reveal">
           <div class="contact-copy">
-            <h3>Let's connect</h3>
-            <p>
+            <h3 data-i18n="contact.heading">Let's connect</h3>
+            <p data-i18n="contact.copy">
               Open to gameplay programming roles and collaborations. Reach out
               and I'll reply quickly.
             </p>
@@ -502,7 +592,7 @@
                 </svg>
               </span>
               <div class="contact-content">
-                <span class="contact-label">Email</span>
+                <span class="contact-label" data-i18n="contact.email">Email</span>
                 <a
                   class="contact-value"
                   href="#"
@@ -516,6 +606,7 @@
                 type="button"
                 data-copy="email"
                 aria-label="Copy email"
+                data-i18n="contact.copyBtn"
               >
                 Copy
               </button>
@@ -529,7 +620,7 @@
                 </svg>
               </span>
               <div class="contact-content">
-                <span class="contact-label">Phone</span>
+                <span class="contact-label" data-i18n="contact.phone">Phone</span>
                 <a
                   class="contact-value"
                   href="#"
@@ -543,6 +634,7 @@
                 type="button"
                 data-copy="phone"
                 aria-label="Copy phone number"
+                data-i18n="contact.copyBtn"
               >
                 Copy
               </button>
@@ -557,7 +649,7 @@
                 </svg>
               </span>
               <div class="contact-content">
-                <span class="contact-label">GitHub</span>
+                <span class="contact-label" data-i18n="contact.github">GitHub</span>
                 <a
                   class="contact-value"
                   href="https://github.com/Sh4dowNoctis/"
@@ -578,7 +670,7 @@
                 </svg>
               </span>
               <div class="contact-content">
-                <span class="contact-label">LinkedIn</span>
+                <span class="contact-label" data-i18n="contact.linkedin">LinkedIn</span>
                 <a
                   class="contact-value"
                   href="https://www.linkedin.com/in/carl-vano/"
@@ -595,8 +687,8 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        <span>Carl Van Hoorebeke - Software Developer</span>
-        <span>Based in France - open to opportunities</span>
+        <span data-i18n="footer.name">Carl Van Hoorebeke - Software Developer</span>
+        <span data-i18n="footer.location">Based in France - open to opportunities</span>
       </div>
     </footer>
 
@@ -606,7 +698,7 @@
       type="button"
       aria-label="Back to top"
     >
-      Top
+      <span data-i18n="backToTop">Top</span>
     </button>
 
     <div class="modal-overlay" id="demo-modal" aria-hidden="true">
@@ -617,10 +709,10 @@
         aria-labelledby="demo-title"
       >
         <button class="modal-close" type="button" aria-label="Close demo reel">
-          Close
+          <span data-i18n="modal.close">Close</span>
         </button>
-        <h3 id="demo-title">Demo Reel</h3>
-        <p class="modal-overview" id="demo-description"></p>
+        <h3 id="demo-title" data-i18n="demo.title">Demo Reel</h3>
+        <p class="modal-overview" id="demo-description" data-i18n="demo.description"></p>
         <div class="modal-media">
           <iframe
             id="demo-video"
@@ -640,33 +732,33 @@
         aria-labelledby="modal-title"
       >
         <button class="modal-close" type="button" aria-label="Close case study">
-          Close
+          <span data-i18n="modal.close">Close</span>
         </button>
         <div class="modal-header">
           <div>
-            <h3 id="modal-title">Project Title</h3>
+            <h3 id="modal-title" data-i18n="modal.projectTitle">Project Title</h3>
             <p class="modal-meta" id="modal-meta"></p>
           </div>
         </div>
         <p class="modal-overview" id="modal-overview"></p>
         <div class="modal-section">
-          <h4>What I built</h4>
+          <h4 data-i18n="modal.built">What I built</h4>
           <ul id="modal-built"></ul>
         </div>
         <div class="modal-section">
-          <h4>Challenges</h4>
+          <h4 data-i18n="modal.challenges">Challenges</h4>
           <ul id="modal-challenges"></ul>
         </div>
         <div class="modal-section">
-          <h4>What I'd improve next</h4>
+          <h4 data-i18n="modal.improvements">What I'd improve next</h4>
           <ul id="modal-improvements"></ul>
         </div>
         <div class="modal-section">
-          <h4>Media gallery</h4>
+          <h4 data-i18n="modal.gallery">Media gallery</h4>
           <div class="modal-gallery" id="modal-gallery"></div>
         </div>
         <div class="modal-section">
-          <h4>Tech used</h4>
+          <h4 data-i18n="modal.tech">Tech used</h4>
           <div class="modal-tags" id="modal-tech"></div>
         </div>
         <div class="modal-actions" id="modal-links"></div>
