@@ -178,7 +178,7 @@ const translations = {
     "skills.chips.ci": "CI Basics",
     "about.title": "About",
     "about.summary":
-      "Software developer with a gameplay programming foundation in Unity and C#. I now build AI tooling and backend workflows while still shipping responsive gameplay systems and prototypes.",
+      "Software developer with a background in gameplay programming using Unity and C#. My experience spans AI tooling, automated testing, and backend workflows, alongside the development of responsive gameplay systems and prototypes. I focus on writing clean, maintainable code and building systems that are both technically solid and practical in production.",
     "about.bullets.0":
       "Rebuilt a shop system into a modern inventory structure.",
     "about.bullets.1": "Improved game feel, UX, and performance in production.",
@@ -407,7 +407,7 @@ const translations = {
     "skills.chips.ci": "Bases CI",
     "about.title": "À propos",
     "about.summary":
-      "Développeur logiciel avec un socle en programmation gameplay sous Unity et C#. Je conçois désormais des outils IA et des workflows backend tout en continuant à livrer des systèmes de gameplay et des prototypes réactifs.",
+      "Développeur logiciel avec un background en programmation gameplay sous Unity et C#. Mon expérience couvre les outils IA, les tests automatisés et les workflows backend, tout en développant des systèmes de gameplay réactifs et des prototypes. Je privilégie un code propre et maintenable, et des systèmes solides techniquement, adaptés à la production.",
     "about.bullets.0":
       "Refonte d'une boutique en structure d'inventaire moderne.",
     "about.bullets.1":
@@ -1324,4 +1324,3 @@ const openCaseStudyModal = (projectId, trigger) => {
 
 bindCaseStudyButtons();
 applyTranslations();
-
