@@ -125,7 +125,7 @@ window.projects = [
     summary:
       "Professional internship with OBSoft, the engineering and R&D branch of PoTech, designing an AI system to generate unit tests from source code and user stories.",
     featured: true,
-    image: "",
+    image: "assets/img/potechLogo.png",
     tags: ["Python", "PHP", "Symfony", "RAG", "ChromaDB", "LLM"],
     note: "Work completed during a professional internship.",
     showActions: "case-study",
