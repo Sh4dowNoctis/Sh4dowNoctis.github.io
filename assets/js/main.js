@@ -71,75 +71,75 @@ const translations = {
     "projects.skybound.case.gallery.1.caption":
       "Building mechanic test (placeholder).",
     "projects.skybound.playDemo": "Play Demo",
-    "projects.happlyz.title":
+    "projects.happlyz-medical.title":
       "Happlyz Medical - Unity Gameplay Internship (Paris, France)",
-    "projects.happlyz.summary":
+    "projects.happlyz-medical.summary":
       "Professional internship as a Unity Gameplay Programmer on LORIO, a medical game-based application connected to a Bluetooth respiratory device.",
-    "projects.happlyz.role": "Gameplay Programmer Intern",
-    "projects.happlyz.highlights.0":
+    "projects.happlyz-medical.role": "Gameplay Programmer Intern",
+    "projects.happlyz-medical.highlights.0":
       "Designed and implemented multiplayer logic for mini-games (Multi Melo Memo).",
-    "projects.happlyz.highlights.1":
+    "projects.happlyz-medical.highlights.1":
       "Optimized gameplay systems and performance for Pulmi's Race.",
-    "projects.happlyz.highlights.2":
+    "projects.happlyz-medical.highlights.2":
       "Reworked the in-game cosmetic shop into a modular, scalable system.",
-    "projects.happlyz.highlights.3":
+    "projects.happlyz-medical.highlights.3":
       "Implemented localization and player progression data visualization.",
-    "projects.happlyz.highlights.4":
+    "projects.happlyz-medical.highlights.4":
       "Delivered production-ready features used in a real medical context.",
-    "projects.happlyz.case.overview":
+    "projects.happlyz-medical.case.overview":
       "Worked on LORIO, a medical game-based application tied to a Bluetooth respiratory device, delivering gameplay systems used in production.",
-    "projects.happlyz.case.built.0":
+    "projects.happlyz-medical.case.built.0":
       "Multiplayer logic for mini-games, with sync and interaction handling.",
-    "projects.happlyz.case.built.1":
+    "projects.happlyz-medical.case.built.1":
       "Gameplay and performance improvements for Pulmi's Race.",
-    "projects.happlyz.case.built.2":
+    "projects.happlyz-medical.case.built.2":
       "Cosmetic shop refactor into a modular, scalable system.",
-    "projects.happlyz.case.built.3":
+    "projects.happlyz-medical.case.built.3":
       "Localization support and player progression data visualization.",
-    "projects.happlyz.case.challenges.0":
+    "projects.happlyz-medical.case.challenges.0":
       "Balancing production constraints with new gameplay feature work (add detail).",
-    "projects.happlyz.case.challenges.1":
+    "projects.happlyz-medical.case.challenges.1":
       "Maintaining UX consistency while refactoring legacy systems.",
-    "projects.happlyz.case.improvements.0":
+    "projects.happlyz-medical.case.improvements.0":
       "Expand automated regression coverage for key gameplay flows (add detail).",
-    "projects.happlyz.case.improvements.1":
+    "projects.happlyz-medical.case.improvements.1":
       "Add deeper network diagnostics for edge cases (add detail).",
-    "projects.happlyz.case.gallery.0.caption":
+    "projects.happlyz-medical.case.gallery.0.caption":
       "LORIO professional dashboard with patient progress overview.",
-    "projects.happlyz.case.gallery.1.caption":
+    "projects.happlyz-medical.case.gallery.1.caption":
       "Cosmetic customization UI for player personalization.",
-    "projects.happlyz.case.gallery.2.caption":
+    "projects.happlyz-medical.case.gallery.2.caption":
       "Multi Melo Memo mini-game with musical interaction.",
-    "projects.happlyz.case.gallery.3.caption":
+    "projects.happlyz-medical.case.gallery.3.caption":
       "Pulmi's Race gameplay with performance-focused tuning.",
-    "projects.potech.title":
+    "projects.potech-obsoft.title":
       "PoTech / OBSoft - AI Test Generation Internship (Lebanon)",
-    "projects.potech.summary":
+    "projects.potech-obsoft.summary":
       "Professional internship with OBSoft, the engineering and R&D branch of PoTech, designing an AI system to generate unit tests from source code and user stories.",
-    "projects.potech.role": "AI Engineer Intern",
-    "projects.potech.highlights.0":
+    "projects.potech-obsoft.role": "AI Engineer Intern",
+    "projects.potech-obsoft.highlights.0":
       "Built an AI pipeline using embeddings and retrieval-augmented generation.",
-    "projects.potech.highlights.1":
+    "projects.potech-obsoft.highlights.1":
       "Automated test generation integrated into CLI and Git workflows.",
-    "projects.potech.highlights.2":
+    "projects.potech-obsoft.highlights.2":
       "Focused on clean architecture, validation, and maintainability.",
-    "projects.potech.highlights.3":
+    "projects.potech-obsoft.highlights.3":
       "Improved developer productivity through fast iteration and feedback.",
-    "projects.potech.case.overview":
+    "projects.potech-obsoft.case.overview":
       "Designed an AI-driven system to generate unit tests from code and user stories with fast developer feedback loops.",
-    "projects.potech.case.built.0":
+    "projects.potech-obsoft.case.built.0":
       "AI pipeline using embeddings and retrieval-augmented generation to ground prompts.",
-    "projects.potech.case.built.1":
+    "projects.potech-obsoft.case.built.1":
       "CLI tooling and Git workflow integration for automated test generation.",
-    "projects.potech.case.built.2":
+    "projects.potech-obsoft.case.built.2":
       "Validation loop to improve output reliability and maintainability.",
-    "projects.potech.case.challenges.0":
+    "projects.potech-obsoft.case.challenges.0":
       "Maintaining reliability across varied code structures (add detail).",
-    "projects.potech.case.challenges.1":
+    "projects.potech-obsoft.case.challenges.1":
       "Balancing generation speed with validation accuracy.",
-    "projects.potech.case.improvements.0":
+    "projects.potech-obsoft.case.improvements.0":
       "Integrate CI checks for generated tests (add detail).",
-    "projects.potech.case.improvements.1":
+    "projects.potech-obsoft.case.improvements.1":
       "Broaden coverage and dataset tuning (add detail).",
     "tags.unity": "Unity",
     "tags.csharp": "C#",
@@ -228,8 +228,7 @@ const translations = {
     "modal.gallery": "Media gallery",
     "modal.tech": "Tech used",
     "demo.title": "Demo Reel",
-    "demo.description":
-      "Short reel of gameplay systems, prototypes, and iteration snapshots. Replace the video URL when ready.",
+    "demo.description": "",
   },
   fr: {
     "header.role": "Développeur logiciel",
@@ -301,75 +300,75 @@ const translations = {
     "projects.skybound.case.gallery.1.caption":
       "Test de mécanique de construction (placeholder).",
     "projects.skybound.playDemo": "Jouer à la démo",
-    "projects.happlyz.title":
+    "projects.happlyz-medical.title":
       "Happlyz Medical — Stage en gameplay Unity (Paris, France)",
-    "projects.happlyz.summary":
+    "projects.happlyz-medical.summary":
       "Stage professionnel en tant que Gameplay Programmer Unity sur LORIO, une application médicale de jeux connectée à un dispositif respiratoire Bluetooth.",
-    "projects.happlyz.role": "Stagiaire programmeur gameplay",
-    "projects.happlyz.highlights.0":
+    "projects.happlyz-medical.role": "Stagiaire programmeur gameplay",
+    "projects.happlyz-medical.highlights.0":
       "Conception et implémentation de la logique multijoueur pour des mini-jeux (Multi Melo Memo).",
-    "projects.happlyz.highlights.1":
+    "projects.happlyz-medical.highlights.1":
       "Optimisation des systèmes de gameplay et des performances pour Pulmi's Race.",
-    "projects.happlyz.highlights.2":
+    "projects.happlyz-medical.highlights.2":
       "Refonte de la boutique cosmétique en un système modulaire et évolutif.",
-    "projects.happlyz.highlights.3":
+    "projects.happlyz-medical.highlights.3":
       "Mise en place de la localisation et de la visualisation des données de progression.",
-    "projects.happlyz.highlights.4":
+    "projects.happlyz-medical.highlights.4":
       "Livraison de fonctionnalités prêtes pour la production dans un contexte médical réel.",
-    "projects.happlyz.case.overview":
+    "projects.happlyz-medical.case.overview":
       "Travail sur LORIO, une application médicale de jeux liée à un dispositif respiratoire Bluetooth, avec des systèmes de gameplay utilisés en production.",
-    "projects.happlyz.case.built.0":
+    "projects.happlyz-medical.case.built.0":
       "Logique multijoueur pour des mini-jeux, avec synchronisation et interactions.",
-    "projects.happlyz.case.built.1":
+    "projects.happlyz-medical.case.built.1":
       "Améliorations du gameplay et des performances pour Pulmi's Race.",
-    "projects.happlyz.case.built.2":
+    "projects.happlyz-medical.case.built.2":
       "Refonte de la boutique cosmétique en système modulaire et évolutif.",
-    "projects.happlyz.case.built.3":
+    "projects.happlyz-medical.case.built.3":
       "Support de la localisation et visualisation des données de progression.",
-    "projects.happlyz.case.challenges.0":
+    "projects.happlyz-medical.case.challenges.0":
       "Gérer les contraintes de production tout en ajoutant des fonctionnalités (à détailler).",
-    "projects.happlyz.case.challenges.1":
+    "projects.happlyz-medical.case.challenges.1":
       "Maintenir la cohérence UX lors de la refonte d'anciens systèmes.",
-    "projects.happlyz.case.improvements.0":
+    "projects.happlyz-medical.case.improvements.0":
       "Étendre la couverture des tests de régression pour les flux clés (à détailler).",
-    "projects.happlyz.case.improvements.1":
+    "projects.happlyz-medical.case.improvements.1":
       "Ajouter des diagnostics réseau plus poussés pour les cas limites (à détailler).",
-    "projects.happlyz.case.gallery.0.caption":
+    "projects.happlyz-medical.case.gallery.0.caption":
       "Tableau de bord LORIO avec suivi de progression des patients.",
-    "projects.happlyz.case.gallery.1.caption":
+    "projects.happlyz-medical.case.gallery.1.caption":
       "Interface de personnalisation cosmétique.",
-    "projects.happlyz.case.gallery.2.caption":
+    "projects.happlyz-medical.case.gallery.2.caption":
       "Mini-jeu Multi Melo Memo avec interaction musicale.",
-    "projects.happlyz.case.gallery.3.caption":
+    "projects.happlyz-medical.case.gallery.3.caption":
       "Gameplay de Pulmi's Race optimisé pour la performance.",
-    "projects.potech.title":
+    "projects.potech-obsoft.title":
       "PoTech / OBSoft — Stage génération de tests IA (Liban)",
-    "projects.potech.summary":
+    "projects.potech-obsoft.summary":
       "Stage professionnel chez OBSoft, branche ingénierie et R&D de PoTech, pour concevoir un système IA générant des tests unitaires à partir du code source et des user stories.",
-    "projects.potech.role": "Stagiaire ingénieur IA",
-    "projects.potech.highlights.0":
+    "projects.potech-obsoft.role": "Stagiaire ingénieur IA",
+    "projects.potech-obsoft.highlights.0":
       "Pipeline IA basé sur des embeddings et le RAG.",
-    "projects.potech.highlights.1":
+    "projects.potech-obsoft.highlights.1":
       "Génération automatique de tests intégrée au CLI et aux workflows Git.",
-    "projects.potech.highlights.2":
+    "projects.potech-obsoft.highlights.2":
       "Architecture propre, validation et maintenabilité.",
-    "projects.potech.highlights.3":
+    "projects.potech-obsoft.highlights.3":
       "Productivité améliorée grâce à des itérations rapides et du feedback.",
-    "projects.potech.case.overview":
+    "projects.potech-obsoft.case.overview":
       "Conception d’un système IA pour générer des tests unitaires à partir du code et des user stories, avec des boucles de feedback rapides.",
-    "projects.potech.case.built.0":
+    "projects.potech-obsoft.case.built.0":
       "Pipeline IA utilisant des embeddings et le RAG pour ancrer les prompts.",
-    "projects.potech.case.built.1":
+    "projects.potech-obsoft.case.built.1":
       "Outils CLI et intégration au workflow Git pour la génération automatique.",
-    "projects.potech.case.built.2":
+    "projects.potech-obsoft.case.built.2":
       "Boucle de validation pour améliorer la fiabilité et la maintenabilité.",
-    "projects.potech.case.challenges.0":
+    "projects.potech-obsoft.case.challenges.0":
       "Fiabiliser les résultats sur des structures de code variées (à détailler).",
-    "projects.potech.case.challenges.1":
+    "projects.potech-obsoft.case.challenges.1":
       "Équilibrer la vitesse de génération et la précision de validation.",
-    "projects.potech.case.improvements.0":
+    "projects.potech-obsoft.case.improvements.0":
       "Intégrer des vérifications CI pour les tests générés (à détailler).",
-    "projects.potech.case.improvements.1":
+    "projects.potech-obsoft.case.improvements.1":
       "Élargir la couverture et ajuster les datasets (à détailler).",
     "tags.unity": "Unity",
     "tags.csharp": "C#",
@@ -462,16 +461,14 @@ const translations = {
     "modal.gallery": "Galerie média",
     "modal.tech": "Technos utilisées",
     "demo.title": "Démo vidéo",
-    "demo.description":
-      "Courte démo de systèmes de gameplay, prototypes et itérations. Remplacez l'URL vidéo quand elle est prête.",
+    "demo.description": "",
   },
 };
 
 if (!window.demoReel) {
   window.demoReel = {
     title: "Demo Reel",
-    description:
-      "Short reel of gameplay systems, prototypes, and iteration snapshots.",
+    description: "",
     embedUrl: "",
   };
 }
@@ -1103,6 +1100,90 @@ const createModalController = (modalId, onClose) => {
   return { modal, open, close };
 };
 
+const createLightbox = () => {
+  const overlay = document.createElement("div");
+  overlay.className = "lightbox-overlay";
+  overlay.setAttribute("aria-hidden", "true");
+  overlay.innerHTML = `
+    <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button class="lightbox-close" type="button" data-i18n="modal.close">Close</button>
+      <img class="lightbox-image" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  const imageEl = overlay.querySelector(".lightbox-image");
+  const captionEl = overlay.querySelector(".lightbox-caption");
+  const closeButton = overlay.querySelector(".lightbox-close");
+
+  const close = () => {
+    overlay.classList.remove("is-open");
+    overlay.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("lightbox-open");
+    if (imageEl) {
+      imageEl.removeAttribute("src");
+      imageEl.removeAttribute("alt");
+    }
+    if (captionEl) {
+      captionEl.textContent = "";
+      captionEl.hidden = true;
+    }
+  };
+
+  const open = (src, altText, caption) => {
+    if (!src || !imageEl) return;
+    imageEl.setAttribute("src", src);
+    imageEl.setAttribute("alt", altText || "");
+    if (captionEl) {
+      captionEl.textContent = caption || "";
+      captionEl.hidden = !(caption && caption.trim());
+    }
+    overlay.classList.add("is-open");
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lightbox-open");
+    if (closeButton) {
+      closeButton.focus();
+    }
+  };
+
+  if (closeButton) {
+    closeButton.addEventListener("click", close);
+  }
+
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay) {
+      close();
+    }
+  });
+
+  document.addEventListener(
+    "keydown",
+    (event) => {
+      if (!overlay.classList.contains("is-open")) return;
+      if (event.key === "Escape") {
+        event.preventDefault();
+        event.stopPropagation();
+        close();
+      }
+    },
+    true,
+  );
+
+  return { open, close, overlay };
+};
+
+const lightbox = createLightbox();
+
+document.addEventListener("click", (event) => {
+  const image = getClosestTarget(event.target, "#modal-gallery img");
+  if (!image || !lightbox) return;
+  const figure = image.closest("figure");
+  const captionEl = figure ? figure.querySelector("figcaption") : null;
+  const caption = captionEl ? captionEl.textContent.trim() : "";
+  lightbox.open(image.getAttribute("src"), image.getAttribute("alt"), caption);
+});
+
 const demoModalController = createModalController("demo-modal", () => {
   const demoVideo = document.getElementById("demo-video");
   if (demoVideo) {
@@ -1243,3 +1324,4 @@ const openCaseStudyModal = (projectId, trigger) => {
 
 bindCaseStudyButtons();
 applyTranslations();
+

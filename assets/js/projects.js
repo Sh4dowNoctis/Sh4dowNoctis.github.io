@@ -1,8 +1,8 @@
 // Update links/labels and media paths here.
 window.demoReel = {
   title: "Gameplay Demo Reel",
-  description: "Short reel of gameplay systems, prototypes, and iteration snapshots. Replace the video URL when ready.",
-  embedUrl: "https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0"
+  description: "",
+  embedUrl: "https://www.youtube-nocookie.com/embed/u6ffrpjhXyM?rel=0",
 };
 
 window.projects = [
@@ -11,7 +11,8 @@ window.projects = [
     title: "SKYBOUND",
     year: "2024",
     role: "Gameplay Programmer",
-    summary: "School group project focused on building mechanics and fast movement.",
+    summary:
+      "School group project focused on building mechanics and fast movement.",
     featured: true,
     image: "assets/img/sc1.png",
     tags: ["Unity", "C#", "Game Feel", "Prototype"],
@@ -19,13 +20,13 @@ window.projects = [
     highlights: [
       "Fast movement controller tuned for responsive feel.",
       "Building mechanics prototype for quick iteration.",
-      "Prototype structure ready for expansion."
+      "Prototype structure ready for expansion.",
     ],
     contribution: [
       "Gameplay systems and core mechanics implementation.",
       "Player movement, physics, and gameplay feel tuning.",
       "Integration of animations and visual assets into Unity.",
-      "Iteration support, playtesting, and gameplay balance adjustments."
+      "Iteration support, playtesting, and gameplay balance adjustments.",
     ],
     caseStudy: {
       overview:
@@ -33,31 +34,31 @@ window.projects = [
       built: [
         "Movement controller with tuning hooks for designer iteration.",
         "Building mechanic prototype with quick placement tests.",
-        "Simple level layout for repeatable playtests."
+        "Simple level layout for repeatable playtests.",
       ],
       challenges: [
         "Balancing speed with readable platforming (add detail).",
-        "Communicating build affordances clearly (add detail)."
+        "Communicating build affordances clearly (add detail).",
       ],
       improvements: [
         "Add more level content and constraints (add detail).",
-        "Capture a short gameplay video (add link)."
+        "Capture a short gameplay video (add link).",
       ],
       gallery: [
         {
           src: "assets/img/sc1.png",
-          caption: "Movement prototype snapshot (placeholder)."
+          caption: "Movement prototype snapshot (placeholder).",
         },
         {
           src: "assets/img/sc3.png",
-          caption: "Building mechanic test (placeholder)."
-        }
-      ]
+          caption: "Building mechanic test (placeholder).",
+        },
+      ],
     },
     buildUrl: "https://sh4downoctis.itch.io/skybound",
     buildLabel: "Play Demo",
     buildPlaceholder: false,
-    showActions: "build-only"
+    showActions: "build-only",
   },
   {
     id: "happlyz-medical",
@@ -76,7 +77,7 @@ window.projects = [
       "Optimized gameplay systems and performance for Pulmi's Race.",
       "Reworked the in-game cosmetic shop into a modular, scalable system.",
       "Implemented localization and player progression data visualization.",
-      "Delivered production-ready features used in a real medical context."
+      "Delivered production-ready features used in a real medical context.",
     ],
     caseStudy: {
       overview:
@@ -85,35 +86,36 @@ window.projects = [
         "Multiplayer logic for mini-games, with sync and interaction handling.",
         "Gameplay and performance improvements for Pulmi's Race.",
         "Cosmetic shop refactor into a modular, scalable system.",
-        "Localization support and player progression data visualization."
+        "Localization support and player progression data visualization.",
       ],
       challenges: [
         "Balancing production constraints with new gameplay feature work (add detail).",
-        "Maintaining UX consistency while refactoring legacy systems."
+        "Maintaining UX consistency while refactoring legacy systems.",
       ],
       improvements: [
         "Expand automated regression coverage for key gameplay flows (add detail).",
-        "Add deeper network diagnostics for edge cases (add detail)."
+        "Add deeper network diagnostics for edge cases (add detail).",
       ],
       gallery: [
         {
           src: "assets/img/happlyz-lorio-progress.png",
-          caption: "LORIO professional dashboard with patient progress overview."
+          caption:
+            "LORIO professional dashboard with patient progress overview.",
         },
         {
           src: "assets/img/happlyz-customization.png",
-          caption: "Cosmetic customization UI for player personalization."
+          caption: "Cosmetic customization UI for player personalization.",
         },
         {
           src: "assets/img/happlyz-melo-memo.png",
-          caption: "Multi Melo Memo mini-game with musical interaction."
+          caption: "Multi Melo Memo mini-game with musical interaction.",
         },
         {
           src: "assets/img/happlyz-pulmis-race.png",
-          caption: "Pulmi's Race gameplay with performance-focused tuning."
-        }
-      ]
-    }
+          caption: "Pulmi's Race gameplay with performance-focused tuning.",
+        },
+      ],
+    },
   },
   {
     id: "potech-obsoft",
@@ -131,7 +133,7 @@ window.projects = [
       "Built an AI pipeline using embeddings and retrieval-augmented generation.",
       "Automated test generation integrated into CLI and Git workflows.",
       "Focused on clean architecture, validation, and maintainability.",
-      "Improved developer productivity through fast iteration and feedback."
+      "Improved developer productivity through fast iteration and feedback.",
     ],
     caseStudy: {
       overview:
@@ -139,17 +141,17 @@ window.projects = [
       built: [
         "AI pipeline using embeddings and retrieval-augmented generation to ground prompts.",
         "CLI tooling and Git workflow integration for automated test generation.",
-        "Validation loop to improve output reliability and maintainability."
+        "Validation loop to improve output reliability and maintainability.",
       ],
       challenges: [
         "Maintaining reliability across varied code structures (add detail).",
-        "Balancing generation speed with validation accuracy."
+        "Balancing generation speed with validation accuracy.",
       ],
       improvements: [
         "Integrate CI checks for generated tests (add detail).",
-        "Broaden coverage and dataset tuning (add detail)."
+        "Broaden coverage and dataset tuning (add detail).",
       ],
-      gallery: []
-    }
-  }
+      gallery: [],
+    },
+  },
 ];
